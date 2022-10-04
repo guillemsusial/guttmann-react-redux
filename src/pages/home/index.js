@@ -1,5 +1,5 @@
 
-import Home from "../../components/home_introduction";
+import Home from "../../components/home/introduction";
 
 const home =()=>{
     return(
