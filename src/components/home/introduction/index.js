@@ -1,8 +1,95 @@
-const home_introduction = () =>{
-    return(
-       <div>
-        <p>hola</p>
-       </div>
-    );
+
+import React, { Component } from 'react';
+
+
+class home_introduction extends Component{
+    render(){
+        return(
+          
+          <div>
+            {/* <!--flecha bajada--> */}
+            <div div class="">        
+              <a><svg id="more-arrows">
+                  <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
+                  <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
+                  <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 " />
+                </svg></a>
+            </div>
+            <hr size="10" class="separador" id="contenido"></hr>
+            {/* <!--textos e imagenes--> */}
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 p-5 divTextos ">
+              <h2 class="pb-3 tituloImg">Recibir tratamiento en el Institut Guttmann</h2>
+              <p class="textoImg textos">El Instituto de Salud Cerebral y Neurorrehabilitación representa una nueva manera de
+                entender la medicina, una forma más avanzada de dar respuesta a los problemas neurológicos de las personas; a
+                las que, además de proporcionarles el diagnóstico más riguroso y el tratamiento más efectivo para su enfermedad,
+                contribuye a promover su salud cerebral, porque esto le ayudará a mejorar también su propia enfermedad y la hará
+                estar y sentirse toda ella más saludable, al tiempo que favorecerá su bienestar y el de su familia, así como el
+                de su entorno relacional.</p>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 flex container ">
+              <img src="../../../assets/img/institut-guttmann.jpg" class="imagenes sombra reveal"/>
+            </div>
+
+            <div class="col-lg-12">
+              <hr class="style"/>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 flex container  ">
+              <img src="../../../assets/img/guttmann2.jpg" class="imagenes sombra reveal"/>
+            </div>
+
+
+            <div class="col-lg-6 col-md-12 d-none d-sm-block d-md-none d-lg-block  p-5 divTextos">
+              <h2 class="pb-3 tituloImg">Referente internacional en Neurorrehabilitación</h2>
+              <p class="textoImg textos">Con más de 55 años de experiencia, el Hospital de Neurorrehabilitación atiende a más de
+                4.500 personas cada año. </p>
+              <p class="textoImg textos">Una entidad privada de iniciativa social dedicada a las personas y a ofrecerles la mejor neurorrehabilitación
+                especializada y el cuidado de la Salud Cerebral.</p>
+              <p class="textoImg textos"><a href="https://www.guttmann.com/es/por-que-escoger-el-institut-guttmann"
+                  title="¿Por qué escoger el Institut Guttmann?">¿Por qué escoger el Institut Guttmann?</a> </p>
+              <p class="textoImg textos"><a href="https://www.guttmann.com/es/especialidades"
+                  title="Especialidades">Especialidades</a></p>
+              <p class="textoImg textos"><a href="https://www.guttmann.com/es/neurorrehabilitacion-pediatrica"
+                  title="Rehabilitación pediátrica">Rehabilitación pediátrica</a></p>
+              <p class="textoImg textos"><a href="https://www.guttmann.com/es/programa-vida-activa"
+                  title="Programa de Vida Activa">Programa Vida Activa</a></p>
+            </div>
+
+            <div class="col-lg-12">
+              <hr class="style"/>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 p-5 divTextos">
+              <h2 class="pb-3 tituloImg">Instituto de Salud Cerebral y Neurorrehabilitación</h2>
+              <p class="textoImg textos">Un conjunto de clínicas en Guttmann Barcelona, especialmente pensadas y diseñadas para
+                ofrecer el mejor diagnóstico y los tratamientos más avanzados para promover la salud y el bienestar de las
+                personas y de sus familias.</p>
+              <p class="textoImg textos"><a href="https://www.guttmann.com/es/salud-cerebral"
+                  title="Clínicas especializadas">Clínicas especializadas</a></p>
+              <p class="textoImg textos"><a href="https://barcelona.guttmann.com/es/treatments" rel="noopener" target="_blank"
+                  title="Tratamientos especializados">Tratamientos especializados</a></p>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 flex container reveal">
+              <img src="../../../assets/img/guttmann.jpg" class="imagenes sombra reveal "/>
+            </div>
+          </div>
+          <hr size="10" class="separador"/>
+
+          {/* <!--enlace juegos--> */}
+          <div>
+            <div class="ps-2 pt-5 pb-4">
+              <h1 class="content text-center usuario pt-4 pb-4 tituloImg">
+                ¿HAS PROBADO NUESTROS JUEGOS?
+              </h1>
+            </div>
+          </div>
+
+        </div>
+        );}
 }
 export default home_introduction;

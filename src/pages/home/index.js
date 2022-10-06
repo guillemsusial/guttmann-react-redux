@@ -1,9 +1,21 @@
 
 import Home from "../../components/home/introduction";
+import React, { Component } from 'react';
 
-const home =()=>{
-    return(
+
+
+class home extends Component{
+    render(){
+        return(
+        <div>
         <Home/>
-    );
+       </div>
+
+        );
+    }
+
+
 }
 export default home;
+
+
