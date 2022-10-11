@@ -1,21 +1,13 @@
+import Introduction from "../../components/home/introduction";
+import Categories from "../../components/home/introduction";
+import React, { Component } from "react";
 
-import Home from "../../components/home/introduction";
-import React, { Component } from 'react';
-
-
-
-class home extends Component{
-    render(){
-        return(
-        <div>
-        <Home/>
-       </div>
-
-        );
-    }
-
-
+function home() {
+  return (
+    <div>
+      <Introduction />
+      <Categories />
+    </div>
+  );
 }
 export default home;
-
-
