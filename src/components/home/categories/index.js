@@ -5,10 +5,12 @@ const immagenes = require.context("/src/assets/images", true);
 
 function home_categories() {
   return (
+    
     <div className='categories'>
-      <ButtonGroup >
-        <Button>Simon</Button>
-        <Button>Sequence</Button>       
+      
+      <ButtonGroup className='buttonGroup' >
+        <Button>Categoria1</Button>
+        <Button>Sequence</Button>      
       </ButtonGroup>
     </div>
   );
