@@ -1,9 +1,13 @@
+import Introduction from "../../components/home/introduction";
+import Categories from "../../components/home/introduction";
+import React, { Component } from "react";
 
-import Home from "../../components/home/introduction";
-
-const home =()=>{
-    return(
-        <Home/>
-    );
+function home() {
+  return (
+    <div>
+      <Introduction />
+      <Categories />
+    </div>
+  );
 }
 export default home;
