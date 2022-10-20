@@ -98,11 +98,9 @@ function home_introduction() {
       </div>
       <hr />
 
-      {/* <!--enlace juegos--> */}
+      {/* <!--enlace juegos--> 
 
-      <div className="ps-2 pt-5 pb-4">
-        <h1 className=" text-center pt-4 pb-4 ">¿HAS PROBADO NUESTROS JUEGOS?</h1>
-      </div>
+      */}
     </div>
   );
 }
