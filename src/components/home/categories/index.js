@@ -3,7 +3,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import "./index.sass";
+
 const immagenes = require.context("/src/assets/images", true);
 const juegos =['Simon','Sequence'];
 function home_categories() {

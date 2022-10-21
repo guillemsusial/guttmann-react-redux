@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./index.sass";
+
 const immagenes = require.context("/src/assets/images", true);
 
 function home_introduction() {
