@@ -1,5 +1,4 @@
 import { Component } from "react";
-import './index.sass';
 const imagenes = require.context('/src/assets/images', true);
 
 function footer() {
@@ -7,7 +6,7 @@ function footer() {
         <footer>
             <div class="row p-4">
                 {/* TEXTO Y ENLACES */}
-                <div class="col-8 col-sm-8 ml-2 enlaces">
+                <div class="col-8 col-sm-8 ms-2 enlaces">
                     © 2022 Institut Guttmann
                     <a class="px-2" href="#">Aviso legal</a>
                     <a class="px-2" href="#">Política de Cookies</a>

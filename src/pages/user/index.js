@@ -1,10 +1,10 @@
 import Introduction from "../../components/home/introduction";
-import Categories from "../../components/home/categories";
+import Categories from "../../components/home/introduction";
 import React, { Component } from "react";
-import './index.sass'
+
 function home() {
   return (
-    <div className="home">
+    <div>
       <Introduction />
       <Categories />
     </div>
