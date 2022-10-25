@@ -25,7 +25,7 @@ function Header() {
                 <img src={imagenes('./userDefault.png')} />
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="#">Trayectoria</Dropdown.Item>
+                <Dropdown.Item href="#">Área de Usuario</Dropdown.Item>
                 <Dropdown.Divider/>
                 <Dropdown.Item href="#">Cerrar sesión</Dropdown.Item>
               </Dropdown.Menu>
