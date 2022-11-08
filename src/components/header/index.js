@@ -8,10 +8,12 @@ const imagenes = require.context('/src/assets/images',true);
 function Header() {
   return (
     <header>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-lg-6 col-md-12 logo my-auto">
-            <a href="#">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 logo my-auto">
+            <a href="/">
+
               <img src={imagenes('./logo.svg')} />
             </a>
           </div>
@@ -25,7 +27,7 @@ function Header() {
                 <img src={imagenes('./userDefault.png')} />
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="#">Trayectoria</Dropdown.Item>
+                <Dropdown.Item href="/user">Área de Usuario</Dropdown.Item>
                 <Dropdown.Divider/>
                 <Dropdown.Item href="#">Cerrar sesión</Dropdown.Item>
               </Dropdown.Menu>

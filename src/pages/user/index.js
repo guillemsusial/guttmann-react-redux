@@ -1,13 +1,10 @@
-import Introduction from "../../components/home/introduction";
-import Categories from "../../components/home/introduction";
 import React, { Component } from "react";
 
-function home() {
+function user() {
   return (
-    <div>
-      <Introduction />
-      <Categories />
-    </div>
+    <React.Fragment>
+      
+    </React.Fragment>
   );
 }
-export default home;
+export default user;
