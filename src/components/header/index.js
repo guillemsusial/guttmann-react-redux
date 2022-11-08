@@ -8,18 +8,20 @@ const imagenes = require.context('/src/assets/images',true);
 function Header() {
   return (
     <header>
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 col-md-12 logo my-auto">
             <a href="/">
+
               <img src={imagenes('./logo.svg')} />
             </a>
           </div>
-          {/* <div class="col-lg-6 col-md-12 user">
+          {/* <div className="col-lg-6 col-md-12 user">
             <Button variant="login">Iniciar sesión</Button>
             <Button variant="register">Registrarse</Button>
           </div> */}
-          <div class="col-lg-6 user">
+          <div className="col-lg-6 user">
             <Dropdown>
               <Dropdown.Toggle variant="custom">
                 <img src={imagenes('./userDefault.png')} />

@@ -4,6 +4,7 @@ const imagenes = require.context('/src/assets/images', true);
 function footer() {
     return (
         <footer>
+
             <div class="container-fluid">
                 <div class="row">
                     {/* TEXTO Y ENLACES */}
@@ -27,6 +28,7 @@ function footer() {
                         <a class="mx-2" href="https://www.youtube.com/user/InstitutGuttmann">
                             <img src={imagenes(`./youtube-gray.svg`)} alt="" srcset="" /></a>
                     </div>
+
                 </div>
             </div>
         </footer>
