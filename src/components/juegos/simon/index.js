@@ -67,21 +67,26 @@ function Simon() {
 
     return (
         <React.Fragment >
-            <div className="container">
+          
                 {stateGame === 0 ?
                     <MainScreen
                         level={level}
                         changeDifficulty={changeDifficulty}
                         setStart={ChangeStateGame}
-                    /> : <GameScreen
-                        numCard ={cardsBylevel[level]}
-                        time ={miliSeconds}
-                        setReset={restartGame} />
-                }
+                    /> : stateGame === 1 ?
+                    <div className="container ">
+                        <GameScreen
+                            numCard ={cardsBylevel[level]}
+                            time ={miliSeconds}
+                            setReset={restartGame}
+                            setFinish ={ChangeStateGame} 
+                        /> 
+                     </div>: <FinishScreen  setReset={restartGame}/>
+                } 
 
 
-                <FinishScreen />
-            </div>
+              
+           
         </React.Fragment>
 
 

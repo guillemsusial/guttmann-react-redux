@@ -9,7 +9,7 @@ function home() {
     <React.Fragment>
       <Header />
       <Introduction />
-      <Categories />
+      {/* <Categories /> */}
       <Footer />
     </React.Fragment>
   );
