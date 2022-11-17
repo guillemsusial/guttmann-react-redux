@@ -1,17 +1,15 @@
-import Header from "../../components/header";
-import Footer from "../../components/footer";
-import Introduction from "../../components/home/introduction";
-import Categories from "../../components/home/categories";
-import React, { Component } from "react";
+import { Header } from "../../components/header";
+import { Footer } from "../../components/footer";
+import { Introduction } from "../../components/home/introduction";
+import { Categories } from "../../components/home/categories";
 
-function home() {
+export const Home = () => {
   return (
-    <React.Fragment>
+    <div>
       <Header />
       <Introduction />
       <Categories />
       <Footer />
-    </React.Fragment>
+    </div>
   );
-}
-export default home;
+};

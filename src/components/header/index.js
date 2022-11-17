@@ -1,19 +1,15 @@
 import React, { Component } from "react";
 import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from "react-bootstrap/Dropdown";
 
 const imagenes = require.context('/src/assets/images',true);
-
-function Header() {
+export const Header = () => {
   return (
     <header>
-
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 col-md-12 logo my-auto">
             <a href="/">
-
               <img src={imagenes('./logo.svg')} />
             </a>
           </div>
@@ -37,6 +33,4 @@ function Header() {
       </div>
     </header>
   );
-}
-
-export default Header;
+};
