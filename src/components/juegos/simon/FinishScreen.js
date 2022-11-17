@@ -1,7 +1,12 @@
+import Button from "./Button";
+
+
 export default function FinishScreen(props){
     return(
-      <div>
-        FinishScreen
+      <div className="text-center">
+        <h1>You Win</h1>
+        <br/>
+        <Button  label="Restart game" action={props.setReset}/>
       </div>
   
   

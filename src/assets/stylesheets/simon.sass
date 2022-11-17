@@ -5,6 +5,8 @@ $color-medium: #71fcd7
 $color-medium-dark: #12a8d6
 $color-light: #fff
 $color-gray: #bbb
+$color-transparent: #ffffff00
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap')
 
 *   
     //border: solid 2px blue
@@ -45,25 +47,75 @@ $color-gray: #bbb
 
    
 .button
-    background-color: $color-medium
-    color: $color-dark
-    width: 150px
-    font-weight: bold
-    padding: 10px 20px
-    margin: 10px 0
-    box-shadow: 2px 2px 5px $color-black
-    border-radius: 15px
-    border: 3px solid $color-medium-dark
-    cursor: pointer    
+    outline:none
+    height: 40px
+    text-align: center
+    width: 130px
+    border-radius:40px
+    background: $color-transparent
+    border: 2px solid #1ECD97
+    color:#1ECD97
+    letter-spacing:1px
+    text-shadow:0
+    font-size: 12px
+    font-weight: bold    
+    cursor: pointer
+    transition: all 0.25s ease
+    
+    &:hover
+        color: white 
+        background: #1ECD97
+        transition : 1000ms
+        transform : translateY(-6px)
+        
+            
+    
+    
 .card
-    background-color: $color-gray!important
+    background-color: $color-transparent !important
     width: 100%
     height: 100px!important
     perspective: 1000px
     cursor: pointer
     
 .finishscreen
-    color: $color-light   
-
+    color: $color-light 
 .rotate
     background-color: green !important
+
+.mainscreen
+    width: 100%
+    height: 100vh
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72)
+    .mainscreen-title
+        font-family: 'Bree Serif', serif
+        font-size: 50px
+        //text-align: left
+    .mainscreen-selectLevel
+        border: solid 1px white
+        border-radius: 5pt
+        width: 90%
+        display: inline-block
+        height: auto
+        padding: 3%
+        .card  
+            border: solid 2px            
+            border-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72) 1
+            font-family: 'Bree Serif', serif                                 
+            float: right           
+            width: 40%
+            display: flex
+            padding: 3%
+            height: auto !important
+            .card-title
+                font-family: 'Bree Serif', serif
+                font-size: 30px  
+            .card-body
+                display: inline-flex
+                gap: 30px
+                .left-arrow
+                    //margin: auto
+                  
+                    
+        .mainscreen-title
+            float: left

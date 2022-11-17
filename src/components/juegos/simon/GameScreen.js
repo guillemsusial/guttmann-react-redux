@@ -35,6 +35,7 @@ export default function GameScreen(props){
     const validatingCards = cardsArr.filter(card => card.validating === 1)
     if(validatingCards.length===2){
       if(validatingCards[0].bind !== validatingCards[1].bind){
+
         //la validacion no coincide
         setCardArr(prevArr =>{
           prevArr[validatingCards[0].id].rotate=false
@@ -45,6 +46,7 @@ export default function GameScreen(props){
         })
        
       }else{
+
         //validacion coincide
         setCardArr(prevArr =>{
           prevArr[validatingCards[0].id].set=1
@@ -55,6 +57,12 @@ export default function GameScreen(props){
         })
       }
 
+    }
+    // Verificar que no hay espacios verificandose
+    const setCards = cardsArr.filter(card => card.set === 0).length
+    if(setCards === 0){
+      //llamar a una funcion para mostrar pantalla FINAL
+      props.setFinish(2)
     }
   }
 
