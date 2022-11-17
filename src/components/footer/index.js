@@ -1,7 +1,5 @@
-import { Component } from "react";
 const imagenes = require.context('/src/assets/images', true);
-
-function footer() {
+export const Footer = () => {
     return (
         <footer>
 
@@ -32,7 +30,5 @@ function footer() {
                 </div>
             </div>
         </footer>
-    )
-}
-
-export default footer;
+    );
+};

@@ -1,10 +1,5 @@
-import React, { Component } from "react";
-
-function user() {
+export const User = () => {
   return (
-    <React.Fragment>
-      
-    </React.Fragment>
+      <div></div>
   );
-}
-export default user;
+};

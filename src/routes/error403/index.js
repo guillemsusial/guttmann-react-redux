@@ -1,12 +1,10 @@
-import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-function error403() {
+export const Error403 = () => {
   return (
-    <React.Fragment>
+    <div>
       <h1>403 Forbidden</h1>
       <Link to="/">RETURN TO THE MAIN PAGE</Link>
-    </React.Fragment>
+    </div>
   );
-}
-export default error403;
+};

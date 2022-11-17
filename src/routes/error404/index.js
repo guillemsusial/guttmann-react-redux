@@ -1,12 +1,10 @@
-import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-function error404() {
+export const Error404 = () => {
   return (
-    <React.Fragment>
+    <div>
       <h1>404 Not Found</h1>
       <Link to="/">RETURN TO THE MAIN PAGE</Link>
-    </React.Fragment>
+    </div>
   );
-}
-export default error404;
+};
