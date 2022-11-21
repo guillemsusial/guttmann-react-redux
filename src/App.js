@@ -1,5 +1,6 @@
 import { Home } from "./pages/home";
 import { User } from "./pages/user";
+import { Register } from "./pages/register"
 import { Error404 } from "./routes/error404";
 import { Error403 } from "./routes/error403";
 
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/user" element={<User/>}/>
+          <Route path="/register" element={<Register/>}/>
 
           <Route path="*" element={<Error404/>} />
 
