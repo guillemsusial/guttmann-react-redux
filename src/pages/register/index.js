@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-const imagenes = require.context('/src/assets/images', true);
+import Img from '../../assets/images/institut-guttmann.jpg';
 
 export const Register = () => {
 
@@ -17,12 +17,12 @@ export const Register = () => {
     };
 
     return (
-        <div className="Register">
-            <img src={imagenes(`./institut-guttmann.jpg`)} alt="" srcset="" />
+        <div className="Register" style={{ backgroundImage: `url(${Img})`, backgroundColor: '#cccccc' }}>
             <div className="loginBox container-fluid">
                 <div className="titulo">
                     <h1>Titulo</h1>
                 </div>
+                <hr/>
                 <form className="form">
                     <div className="row">
                         <div className="col-6">
