@@ -13,7 +13,7 @@ $color-transparent: #ffffff00
     padding: 0
     margin: 0
     box-sizing: border-box
-    font-family: "Lato", sans-serif
+    font-family: 'Bree Serif', serif  
     
 
 .container
@@ -48,27 +48,31 @@ $color-transparent: #ffffff00
    
 .button
     outline:none
-    height: 40px
+    //height: 40px
     text-align: center
-    width: 130px
+    //width: 130px
     border-radius:40px
     background: $color-transparent
     border: 2px solid #1ECD97
     color:#1ECD97
-    letter-spacing:1px
+    padding: 3%
     text-shadow:0
-    font-size: 12px
+    font-size: 100%
+    height: 80px
     font-weight: bold    
     cursor: pointer
     transition: all 0.25s ease
+    white-space: nowrap
     
     &:hover
         color: white 
         background: #1ECD97
         transition : 1000ms
         transform : translateY(-6px)
-        
-            
+
+
+*
+    //border: 2px solid black  !important
     
     
 .card
@@ -77,6 +81,7 @@ $color-transparent: #ffffff00
     height: 100px!important
     perspective: 1000px
     cursor: pointer
+    
     
 .finishscreen
     color: $color-light 
@@ -87,35 +92,78 @@ $color-transparent: #ffffff00
     width: 100%
     height: 100vh
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72)
+    display: flex     
+    justify-content: center
+    
+   
     .mainscreen-title
         font-family: 'Bree Serif', serif
         font-size: 50px
-        //text-align: left
-    .mainscreen-selectLevel
+        
+        
+    .mainscreen-card
+        width: 85%
+        
+        margin: auto
+        padding: 3%
         border: solid 1px white
         border-radius: 5pt
-        width: 90%
-        display: inline-block
-        height: auto
-        padding: 3%
-        .card  
-            border: solid 2px            
-            border-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72) 1
-            font-family: 'Bree Serif', serif                                 
-            float: right           
-            width: 40%
-            display: flex
-            padding: 3%
-            height: auto !important
-            .card-title
-                font-family: 'Bree Serif', serif
-                font-size: 30px  
-            .card-body
-                display: inline-flex
-                gap: 30px
-                .left-arrow
-                    //margin: auto
-                  
+        background-color: rgba(255, 255, 255, 0.048)
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px
+        .mainscreen-selectLevel
+                                     
+            .card  
+                // border: solid 2px            
+                // border-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72) 1                                  
+                box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px
+                border-radius: 10pt               
+                backdrop-filter: blur(14px) !important                
+                //width: 50%
+                //display: flex
+                flex-direction: column               
+                justify-content: center
+                margin: auto
+                padding: 3%  
+                height: 400px !important               
+                padding: 5%
+                
+                .card-title
+                    font-family: 'Bree Serif', serif
+                    font-size: 50px  
+                .card-body
                     
-        .mainscreen-title
-            float: left
+                    flex-direction: row
+                    flex: none !important
+                    display: flex 
+                    margin: auto                   
+                    height: auto
+                    .arrow
+                        font-size: 100%                   
+                        
+            .mainscreen-title
+                float: left
+
+        .mainscreen-startGame        
+            width: 90%
+            display: inline-block
+            height: auto
+            padding: 3% 
+            .card  
+                border: none
+                font-family: 'Bree Serif', serif                                 
+                margin: auto      
+                width: 100%
+                max-width: 650px
+                display: flex
+                padding: 3%
+                height: auto !important
+                .card-title
+                    font-family: 'Bree Serif', serif
+                    font-size: 30px  
+                .card-body
+                    display: inline-flex
+                    gap: 30px
+                    .button-start
+                        font-size: 50px
+                        width: 100%
+                        height: 100px

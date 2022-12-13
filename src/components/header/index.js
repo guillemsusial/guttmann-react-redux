@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { Component  } from "react";
 import Button from 'react-bootstrap/Button';
 import Dropdown from "react-bootstrap/Dropdown";
 
 const imagenes = require.context('/src/assets/images',true);
 export const Header = () => {
+  
   return (
     <header>
       <div class="container-fluid">

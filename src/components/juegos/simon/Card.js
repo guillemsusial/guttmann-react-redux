@@ -1,7 +1,9 @@
 
 export default function Card(props){
+ 
     return(
-      <div className={`card ${props.rotate ? ' rotate' : ''}`} 
+      <div className={`card ${props.rotate ? ' rotate' : ''} `}
+      
         data-id={props.id}
         data-bind={props.bind}
         onClick={()=> props.actionRotate(props.id,props.set)

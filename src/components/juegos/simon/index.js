@@ -1,7 +1,7 @@
 import MainScreen from "./MainScreen";
 import GameScreen from "./GameScreen";
 import FinishScreen from "./FinishScreen";
-import React, { useState } from "react";
+import React, { useState ,useEffect } from "react";
 
 
 
@@ -18,6 +18,7 @@ function Simon() {
     const changeDifficulty = () => {
         setLevel(level === 1 ? 0 : level + 1)
     }
+  
 
     // determinar el estado del juego 0:no iniciado 1:procesando 2:Finalizado
     const ChangeStateGame = (value) => {
@@ -31,6 +32,7 @@ function Simon() {
         setLevel(0)
         resetTime()
     }
+    
 
     //objeto con numero de card segun nivel
     const cardsBylevel ={
