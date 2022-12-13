@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component  } from "react";
+import Button from 'react-bootstrap/Button';
 import Dropdown from "react-bootstrap/Dropdown";
 import Box from "@mui/material/Box";
 import Button from '@mui/material/Button';
@@ -20,9 +21,6 @@ const style = {
 };
 
 export const Header = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
   return (
     <header>
       <div class="container-fluid">
