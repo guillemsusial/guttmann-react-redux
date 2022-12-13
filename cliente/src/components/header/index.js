@@ -1,5 +1,5 @@
 import React, { Component  } from "react";
-import Button from 'react-bootstrap/Button';
+import ButtonReact from 'react-bootstrap/Button';
 import Dropdown from "react-bootstrap/Dropdown";
 import Box from "@mui/material/Box";
 import Button from '@mui/material/Button';
@@ -21,6 +21,15 @@ const style = {
 };
 
 export const Header = () => {
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <header>
       <div class="container-fluid">
@@ -31,10 +40,10 @@ export const Header = () => {
             </a>
           </div>
           
-          {/* <div className="col-lg-6 col-md-12 user">
-            <Button variant="login" onClick={handleOpen}>Iniciar sesión</Button>
-            <Button variant="register" href="/register">Registrarse</Button>
-          </div> */}
+          <div className="col-lg-6 col-md-12 user">
+            <ButtonReact variant="login" onClick={handleOpen}>Iniciar sesión</ButtonReact>
+            <ButtonReact variant="register" href="/register">Registrarse</ButtonReact>
+          </div>
 
           <Modal
             open={open}
@@ -52,18 +61,18 @@ export const Header = () => {
             </Box>
           </Modal>
 
-          <div className="col-lg-6 user">
+          {/* <div className="col-lg-6 user">
             <Dropdown>
               <Dropdown.Toggle variant="custom">
                 <img src={imagenes("./userDefault.png")} />
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item>Área de Usuario</Dropdown.Item>
+                <Dropdown.Item onClick={handleOpen}>Área de Usuario</Dropdown.Item>
                 <Dropdown.Divider />
                 <Dropdown.Item href="#">Cerrar sesión</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
