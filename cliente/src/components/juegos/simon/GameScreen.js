@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import Button from "./Button";
+import Button from "../../elements/Button";
 import Card from "./Card";
 import arrCardRand from "./logic/CreateArrCardRand";
 import arrCardSequence from "./logic/sequence";

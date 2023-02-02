@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../../elements/Button";
 import Card from 'react-bootstrap/Card';
 import { BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill } from "react-icons/bs";
 
