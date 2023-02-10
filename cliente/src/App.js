@@ -2,7 +2,6 @@ import { Home } from "./pages/home";
 import { User } from "./pages/user";
 import { Register } from "./pages/register"
 import { Error404 } from "./routes/error404";
-import { Error403 } from "./routes/error403";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
