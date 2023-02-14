@@ -13,7 +13,7 @@ export const User = () => {
           </div>
           <div className="col-md-8">
             <div className="row p-2">
-              <div className="col-md-12">Imagen de usuario</div>
+              <div className="col-md-12">Datos y puntuaciones de usuario</div>
             </div>
           </div>
         </div>
