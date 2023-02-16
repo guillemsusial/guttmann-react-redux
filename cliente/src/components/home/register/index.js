@@ -7,6 +7,7 @@ import Axios from "axios";
 
 import Img from '../../../assets/images/institut-guttmann.jpg';
 
+//TODA LA PARTE DE LLAMADAS A API
 
 export const Login = () => {
 
