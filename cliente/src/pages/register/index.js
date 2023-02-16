@@ -21,7 +21,7 @@ export const Register = () => {
         console.log(event.target.value);
     };
 
-    const schema = yup.object().shape({
+    /*const schema = yup.object().shape({
         name: yup.string().required(),
         last_name: yup.string().required(),
         email: yup.string().email().required(),
@@ -30,7 +30,7 @@ export const Register = () => {
         birth_year: yup.number().positive().integer().required(),
         studies: yup.string().required(),
         sex: yup.string().required(),
-    });
+    });*/
 
     const {register, handleSubmit, formState: {errors}} = useForm({
         resolver: yupResolver(schema),

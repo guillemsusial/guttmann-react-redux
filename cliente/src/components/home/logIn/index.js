@@ -7,6 +7,7 @@ import Axios from "axios";
 
 import Img from '../../../assets/images/institut-guttmann.jpg';
 
+//TODA LA PARTE DE LLAMADAS A API
 
 export const Login = () => {
 
@@ -21,23 +22,12 @@ export const Login = () => {
     const handleChange = event => {
         console.log(event.target.value);
     };
-
-    const schema = yup.object().shape({
-        name: yup.string().required(),
-        last_name: yup.string().required(),
-        email: yup.string().email().required(),
-        password: yup.string().min(4).required(),
-        confirm_password: yup.string().oneOf([yup.ref("password"), null]).required(),
-        birth_year: yup.number().positive().integer().required(),
-        studies: yup.string().required(),
-        sex: yup.string().required(),
-    });
-
     const {register, handleSubmit, formState: {errors}} = useForm({
         resolver: yupResolver(schema),
     });
 
     //const {name, last_name, email, password, birth_year, studies, sex} = useForm();
+    
     const onSubmit = (data) => {
         console.log(data);
         Axios.post("http://localhost:3001/api/insert", data).then((response) => {
