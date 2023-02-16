@@ -2,7 +2,7 @@ import { Home } from "./pages/home";
 import { User } from "./pages/user";
 import { Register } from "./pages/register"
 import { Error404 } from "./routes/error404";
-import Simon from "./components/juegos/simon"
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //resolver ruta button en simon 
 import "./assets/stylesheets/App.sass";
