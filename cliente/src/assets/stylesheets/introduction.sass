@@ -1,16 +1,89 @@
 
-*
-   //border: solid black 2px
+/* variables */
+$color-black: #000
+$color-dark: #000000
+$color-medium: #71fcd7
+$color-medium-dark: #12a8d6
+$color-light: #fff
+$color-gray: #bbb
+$color-transparent: #ffffff00
+
+*   
    word-wrap: break-word
    overflow-wrap: break-word
 
-.introduction   
-    img
-        max-width: 600px
-        width: 100%
-        height: auto
-    hr
-        margin: 1rem auto!important
-    div        
-        p
-           text-align: justify
+img
+   filter: blur(2.2px) brightness(1.1) grayscale(0.23) sepia(0.33)
+
+#introduction
+   //background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72)
+   background-image: url("../images/institut-guttmann.jpg")
+   position: (fixed !important)
+   padding: 8rem
+   margin: 0
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   color: white //#001f3f   
+   background-position: center center
+   background-size: cover
+   
+
+   .formulario_de_registro
+      padding: 100px
+      border-radius: 50px
+      background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72)      
+      box-shadow: -35px 35px 70px #051937,35px -35px 70px #007693
+      filter: opacity(0.95)
+
+        /* background: #004d7a
+         border-radius: 50px
+         box-shadow: inset -35px 35px 70px #00324f,inset 35px -35px 70px #0068a5*/
+
+
+   div
+      
+      text-align: justify      
+      h1
+         border-bottom: solid white 1px
+      .register-info         
+         border-radius: 40px !important
+         width: auto
+      .register
+         .titulos
+            font-size: 20px
+            margin: 5px
+      
+      form 
+         
+         .register-submit 
+            display: block  
+            margin: auto !important           
+            border-radius: 30px !important
+            width: auto
+            max-width: 125px
+         .col-6 > select ,input
+            display: flex
+            width: 100%  
+            background-color: white
+            height: 40px            
+            border: none
+            border-radius: 10px  
+            padding-left: 10px           
+         .sexo 
+            margin: auto
+            width: 50%
+            
+         > *
+            width: 90%
+            margin: auto  
+         
+        
+
+         
+        
+        
+
+   
+   

@@ -1,14 +1,35 @@
-// .home
-//     width: 95%
-//     margin: auto
+@import header, introduction, categories, footer, user, register, simon
 
-// :root
-//   --background-color: rgb(47, 78, 163)
-//   --border-color: rgb(255, 255, 255, 0.1)
 
-//Imports SASS
+/* variables */
+$color-black: #000
+$color-dark: #000000
+$color-medium: #71fcd7
+$color-medium-dark: #12a8d6
+$color-light: #fff
+$color-gray: #bbb
+$color-transparent: #ffffff00
 
-@import header, introduction, categories, footer, user, register
+button
+    outline: none
+    // height: 40px
+    text-align: center
+         //width: 130px
+    border-radius: 40px !important
+    background: $color-transparent
+    border: 2px solid #1ECD97
+    color: #1ECD97
+    padding: 3%
+    text-shadow: 0
+    font-size: 100%
+    height: 80px
+    font-weight: bold
+    cursor: pointer
+    transition: all 0.25s ease
+    white-space: nowrap
 
-//, simon
-
+    &:hover
+        color: white
+        background: #1ECD97
+        transition: 1000ms
+        transform: translateY(-6px)
