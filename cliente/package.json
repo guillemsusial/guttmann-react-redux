@@ -1,6 +1,6 @@
 {
   "name": "guttmann-react-redux",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -36,6 +36,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "author": "Guillem Susial Buxens, Raul Mendez Mata, Marc Segura Blázquez",
+  "license": "MIT",
   "eslintConfig": {
     "extends": [
       "react-app",
