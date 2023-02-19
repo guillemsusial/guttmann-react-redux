@@ -3,11 +3,15 @@
 # dependencies
 cliente/node_modules
 server/node_modules
+node_modules
 /.pnp
 .pnp.js
 
 # testing
 /coverage
+
+#.env
+.env
 
 # production
 /build
@@ -23,4 +27,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/.vscode
+.vscode
