@@ -6,6 +6,8 @@ const sequelize = new Sequelize('plataforma_guttmann', 'root', 'root', {
   dialect: 'mysql',
 });
 
+
+
 module.exports = sequelize;
 
 // TODO: CREACIÓN DE BBDD ANTES DE LA CONEXIÓN A SEQUELIZE
