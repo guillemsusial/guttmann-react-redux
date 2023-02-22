@@ -1,4 +1,4 @@
-const { Sequelize } = require('sequelize');
+import * as mongoose from 'mongoose';
 require('dotenv').config();
 
 const sequelize = new Sequelize('plataforma_guttmann', 'root', 'root', {
@@ -6,6 +6,13 @@ const sequelize = new Sequelize('plataforma_guttmann', 'root', 'root', {
   dialect: 'mysql',
 });
 
+const RegisterDatabaseConnection = async (Config) => {
+  await mongoose.connect(Config.connectionString, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+    .then(db => console.log('Database connection stablished.'))
+}
 
 
 module.exports = sequelize;
